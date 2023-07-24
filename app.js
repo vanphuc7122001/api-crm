@@ -674,7 +674,7 @@ const pathPublic = path.join(__dirname, "./app/public");
 app.use("/public", express.static(pathPublic));
 
 // simple route
-app.get("/", (req, res, next) => {
+app.get("/home", (req, res, next) => {
   return res.send({
     message: "Welcom to Personal CRM System",
   });
